@@ -1,2 +1,2 @@
-# yadmb-extension-template
-Template for yadmb extensions.
+# yadmb-addon-template
+Template for yadmb addons.
