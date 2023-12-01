@@ -1,6 +1,6 @@
 import { addonTypes } from "yadmb-types"
 
-const addon: AddonTypes.AddonInfo = {
+const addon: addonTypes.AddonInfo = {
   name: "Template Addon",
   description: "Template addon for YADMB.",
   credits: "your-name",
@@ -9,12 +9,14 @@ const addon: AddonTypes.AddonInfo = {
   sources: [
     "https://github.com/tairasoul/yadmb-extension-template/tree/main"
   ],
-  commands: {
-    name: "template-addon",
-    description: "template addon",
-    options: [],
-    callback: (interaction) => await interaction.createMessage({content: "hello from template-addon!"})
-  }
+  commands: [
+    {
+      name: "template-addon",
+      description: "template addon",
+      options: [],
+      callback: async (interaction) => await interaction.createMessage({content: "hello from template-addon!"})
+    }
+  ]
 }
 
 export default addon

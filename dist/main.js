@@ -11,7 +11,7 @@ const addon = {
     name: "template-addon",
     description: "template addon",
     options: [],
-    callback: (interaction) => await interaction.createMessage({content: "hello from template-addon!"})
+    callback: async (interaction) => await interaction.createMessage({content: "hello from template-addon!"})
   }
 }
 
