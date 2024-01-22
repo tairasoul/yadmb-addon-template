@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "yadmb-types": "^2.0.2"
+    "yadmb-types": "^2.5.0"
   },
   "type": "module"
 }
